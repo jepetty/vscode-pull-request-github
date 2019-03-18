@@ -28,6 +28,7 @@ function ensurePR(prManager: IPullRequestManager, pr?: PRNode | IPullRequestMode
 
 		return prManager.activePullRequest;
 	} else {
+		console.log('ugh this is not a pr');
 		return pr instanceof PRNode ? pr.pullRequestModel : pr;
 	}
 }
