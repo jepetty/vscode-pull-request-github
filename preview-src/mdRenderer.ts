@@ -8,4 +8,5 @@ const md = MarkdownIt({
 	html: true
 });
 
+md.html = false;
 export default md;
